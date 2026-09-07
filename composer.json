@@ -1,0 +1,60 @@
+{
+    "name": "shakil3334413/laravel-role-permissions",
+    "description": "Laravel roles and permissions with separate web/app scopes, modules, optional submodules, and single or multiple roles.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahadi Hasan Shakil",
+            "homepage": "https://medium.com/@shakil3334426",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/shakil3334413/Laravel-Role-Permissions",
+    "support": {
+        "issues": "https://github.com/shakil3334413/Laravel-Role-Permissions/issues",
+        "source": "https://github.com/shakil3334413/Laravel-Role-Permissions"
+    },
+    "keywords": [
+        "laravel",
+        "roles",
+        "permissions",
+        "rbac",
+        "modules",
+        "submodules"
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/auth": "^12.0 || ^13.0",
+        "illuminate/contracts": "^12.0 || ^13.0",
+        "illuminate/database": "^12.0 || ^13.0",
+        "illuminate/support": "^12.0 || ^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shakil\\Permissions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shakil\\Permissions\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shakil\\Permissions\\PermissionServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
